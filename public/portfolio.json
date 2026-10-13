@@ -1,0 +1,31 @@
+{
+  "name": "Rodel Ilagan",
+  "role": "SharePoint & Microsoft 365 Specialist",
+  "eyebrow": "Independent thinking. Connected solutions.",
+  "intro": "I help teams bring structure to SharePoint and Microsoft 365 — through thoughtful governance, information architecture, development, and migration.",
+  "about": "My focus is on making Microsoft platforms work better for the people who use them. I offer SharePoint Online, governance, information architecture, Dynamics 365 development, SharePoint Framework development, and ShareGate data migration services.",
+  "aboutNote": "[Placeholder: add your professional background and approach.]",
+  "email": "",
+  "github": "https://github.com/idevdel03",
+  "photo": "",
+  "cv": "",
+  "cvName": "",
+  "services": [
+    {"title":"SharePoint Online","description":"Support for organizing and developing your SharePoint Online environment."},
+    {"title":"Governance","description":"Bring clarity to how your SharePoint environment is managed and maintained."},
+    {"title":"Information architecture","description":"Structure sites and information around the way your team works."},
+    {"title":"Dynamics 365 development","description":"Development services for your Dynamics 365 requirements."},
+    {"title":"SharePoint Framework","description":"Custom SharePoint experiences built with SPFx."},
+    {"title":"ShareGate data migration","description":"Move SharePoint content with ShareGate migration services."}
+  ],
+  "projects": [],
+  "experience": [],
+  "skills": [
+    {"name":"SharePoint Online","logo":"sharepoint","detail":"Platform & collaboration"},
+    {"name":"Dynamics 365","logo":"dynamics","detail":"Development"},
+    {"name":"SharePoint Framework","logo":"code","detail":"Custom experiences"},
+    {"name":"ShareGate","logo":"migration","detail":"Data migration"},
+    {"name":"Governance","logo":"governance","detail":"Structure & standards"},
+    {"name":"Information architecture","logo":"architecture","detail":"Information design"}
+  ]
+}

@@ -1,0 +1,12 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const data=JSON.parse(readFileSync('public/portfolio.json','utf8'));
+assert.equal(typeof data.name,'string');
+for(const key of ['services','projects','experience','skills'])assert.ok(Array.isArray(data[key]),`${key} must be an array`);
+assert.ok(data.services.every(x=>x.title&&x.description));
+assert.ok(data.skills.every(x=>x.name&&['sharepoint','dynamics','code','migration','governance','architecture'].includes(x.logo)));
+assert.ok(!data.email||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email),'Invalid contact email');
+assert.ok(!data.cv||data.cv.startsWith('data:application/pdf;base64,'));
+assert.ok(!data.photo||/^data:image\/(png|jpeg|webp);base64,/.test(data.photo));
+console.log('Portfolio content checks passed.');
+if(!data.email)console.log('Publishing reminder: contact email is required.');
